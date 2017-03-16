@@ -1,0 +1,465 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+
+
+
+
+
+/************\
+  $KEYBOARD
+\************/
+.keyboard {
+  width: 1400px;
+  height: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: 260px;
+  background-color: #176c86;
+  border-radius: 15px;
+  box-shadow: 1px 2px 30px 1px rgb(71, 174, 206);
+}
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 1.3em;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(45, 44, 46);
+  border-radius: 2px;
+  border-top: 2px solid rgb(126, 124, 126);
+  border-left: 3px solid rgb(126, 124, 126);
+  border-right: 3px solid rgb(126, 124, 126);
+  border-bottom: 5px solid rgb(126, 124, 126);
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+.muchText {
+  font-size: 0.8em;
+  text-align: center;
+}
+  .keySection {
+    /*background-color: rgb(215, 212, 217);*/
+  }
+  .keyboard--controlKey {
+    position: absolute;
+    width: 1380px;
+    height: 50px;
+    top: 15px;
+    left: 10px;
+  }
+    .f1Tof4 {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 80px;
+      width: 20%;
+    }
+    .f5Tof8 {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 342px;
+      width: 20%;
+    }
+    .f9Tof12 {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 604px;
+      width: 20%;
+    }
+    .otherControlKeys {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      right: 0px;
+      width: 13.3%;
+    }
+  .keyboard--numberKey {
+    position: absolute;
+    width: 244px;
+    height: 300px;
+    bottom: 15px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+    .numberKey--row1 {
+      width: 100%;
+      display: flex;
+    }
+    .numberKey--row2,
+    .numberKey--row3,
+    .numberKey--row4,
+    .numberKey--row5 {
+      width: 80%;
+      display: flex;
+    }
+  .keyboard--mainKey {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    bottom: 15px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+    .mainKey--row1,
+    .mainKey--row2,
+    .mainKey--row3,
+    .mainKey--row4,
+    .mainKey--row5 {
+      width: 100%;
+      display: flex;
+    }
+  .keyboard--directionKey {
+    position: absolute;
+    width: 183px;
+    height: 300px;
+    bottom: 15px;
+    right: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+    .directionKey--row1,
+    .directionKey--row2,
+    .directionKey--row3,
+    .directionKey--row4,
+    .directionKey--row5 {
+      width: 100%;
+      display: flex;
+    }
+    .directionKey--row3 {
+      height: 57px;
+    }
+    .directionKey--row4 {
+      justify-content: center;
+    }
+      .triangle {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to bottom left, #FFF 50%, rgb(45, 44, 46) 50%);
+      }
+      .directionUp {
+        transform: rotate(-45deg);
+      }
+      .directionLeft {
+        transform: rotate(-135deg);
+      }
+      .directionDown {
+        transform: rotate(-225deg);
+      }
+      .directionRight {
+        transform: rotate(45deg);
+      }
+.lightenKey {
+  /*background-color: rgb(135, 30, 59);*/
+  background-color: rgb(249, 37, 132);
+  position: relative;
+  top: 2px;
+  border-top: 1px solid rgb(126, 124, 126);
+  border-bottom : 3px solid rgb(126, 124, 126);
+}
+.darkenKey {
+  background-color: rgb(45, 44, 46);
+  border-top: 2px solid rgb(126, 124, 126);
+  border-bottom : 5px solid rgb(126, 124, 126);
+}
+/******* single key *******/
+.esc {
+  position: absolute;
+  left: 0px;
+}
+.backspace {
+  width: 100px;
+}
+.tab,
+.backslash {
+  width: 75px;
+}
+.enter {
+  width: 122px;
+}
+.capslock {
+  width: 85px;
+}
+.leftShift {
+  width: 115px;
+}
+.rightShift {
+  width: 153px;
+}
+.control,
+.alt,
+.windows,
+.contextmenu {
+  width: 70px;
+}
+.space {
+  width: 322px;
+}
+.zero {
+  width: 111.25px;
+}
+.plus {
+  position: absolute;
+  top: 61px;
+  right: 1px;
+  height: 111px;
+}
+.numberenter {
+  position: absolute;
+  top: 181px;
+  right: 1px;
+  height: 111px;
+}
+
+
+
+
+
+
+/************\
+  $messageBox
+\************/
+.messageBox {
+  position: absolute;
+  top: 400px;
+  left: 560px;
+  width: 800px;
+  height: 100px;
+  border: 5px solid #176c86;
+  border-radius: 20px;
+  box-shadow: 1px 2px 30px 1px rgb(71, 174, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  @keyframes slideoutmessageBoxInput {
+    0% {
+      top: 8%;
+      opacity: 1;
+    }
+    100% {
+      top: -200%;
+      opacity: 0;
+    }
+  }
+  .messageBox__input {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    top: 8%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #f30270;
+    font-size: 4em;
+    font-weight: 900;
+    background-color: transparent;
+    overflow: hidden;
+    text-align: center;
+  }
+  .messageBox__input:focus {
+    outline: none;
+    cursor: none;
+  }
+
+
+
+
+
+/************\
+  $NOTEPAPER
+\************/
+.notePaper {
+  width: 30%;
+  height: 80%;
+  position: absolute;
+  /*top: 10%;*/
+  top: -80%;
+  left: 35%;
+  background-color: rgb(255, 246, 165);
+  /*visibility: hidden;*/
+}
+@keyframes printNotePaper1 {
+  0% {
+    top: -80%
+  }
+  5% {
+    top: -79%;
+  }
+  10% {
+    top: -78%;
+  }
+  15% {
+    top: -77%;
+  }
+  20% {
+    top: -76%;
+  }
+  25% {
+    top: -75%;
+  }
+  30% {
+    top: -74%;
+  }
+  35% {
+    top: -73%;
+  }
+  40% {
+    top: -72%;
+  }
+  45% {
+    top: -71%;
+  }
+  50% {
+    top: -70%;
+  }
+  55% {
+    top: -69%;
+  }
+  60% {
+    top: -68%;
+  }
+  65% {
+    top: -67%;
+  }
+  70% {
+    top: -66%;
+  }
+  75% {
+    top: -65%;
+  }
+  80% {
+    top: -64%;
+  }
+  85% {
+    top: -63%;
+  }
+  90% {
+    top: -62%;
+  }
+  95% {
+    top: -61%;
+  }
+  100% {
+    top: -60%;
+  }
+}
+@keyframes printNotePaper2 {
+  0% {
+    top: -60%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+.notePaperInfo {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+  .notePaperInfo__No {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #000;
+  }
+  .notePaperInfo__Date {
+    width: 100%;
+    height: 40%;
+  }
+.notePaperLine {
+  width: 90%;
+  height: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notePaperLineRow {
+  width: 100%;
+  height: 5%;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: flex-end;
+  text-indent: 10px;
+}
+
+
+
+
+
+/************\
+  $LED LIGHT
+\************/
+.keyboardLogo {
+  position: absolute;
+  top: 12px;
+  right: 335px;
+  color: #FFF;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  margin: 0;
+  font-weight: 100;
+}
+.ledLight {
+  position: absolute;
+  width: 183px;
+  height: 40px;
+  top: 41px;
+  right: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.typeOfLight {
+  width: 61px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+  .numLockLight,
+  .capsLockLight,
+  .scrollLockLight {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(circle 10px at center, white -35%, #6b006d 30%);
+  }
+  .turnOn {
+    background: radial-gradient(circle 10px at center, white -35%, #cc04d0 30%);
+  }
+  .lightTitle {
+    color: #FFF;
+    font-size: 0.6em;
+    text-align: center;
+    margin: 0;
+  }
