@@ -290,12 +290,13 @@ body {
 \************/
 .notePaper {
   width: 30%;
-  height: 80%;
+  height: 50%;
   position: absolute;
-  /*top: 10%;*/
-  top: -80%;
+  top: 10%;
+  /*top: -80%;*/
   left: 35%;
-  background-color: rgb(255, 246, 165);
+  background-color: #FFF;
+  /*background-color: rgb(255, 246, 165);*/
   /*visibility: hidden;*/
 }
 @keyframes printNotePaper1 {
@@ -381,6 +382,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  visibility: hidden;
+  display: none;
 }
   .notePaperInfo__No {
     width: 100%;
@@ -396,19 +399,20 @@ body {
   height: 85%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 75px;
+  margin-top: 37px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .notePaperLineRow {
   width: 100%;
-  height: 5%;
-  border-bottom: 1px solid #000;
+  height: 10%;
+  /*border-bottom: 1px solid #000;*/
   display: flex;
   align-items: flex-end;
   text-indent: 10px;
+  font-size: 2em;
 }
 
 

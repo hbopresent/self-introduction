@@ -115,7 +115,7 @@ function Keyboard() {
 }
 Keyboard.prototype = {
   init: function() {
-    for(var i = 0 ; i < 20 ; i++) {
+    for(var i = 0 ; i < 9 ; i++) {
       logitech.notePaperLineArray[i] = document.getElementById("paperLineRow" + i);
     }
 
