@@ -132,15 +132,14 @@ Keyboard.prototype = {
 
     if(property == "Enter") {
       if(document.getElementById("messageBoxInput").value == "PRINT") {
-        document.getElementById("messageBoxInput").style.visibility = "hidden";
         logitech.notePaper.style.animation = "printNotePaper1 6s 1s steps(1) forwards, printNotePaper2 1.5s 6.1s linear forwards";
       }
       else {
         // store value of messageBox
         logitech.storeMessageBoxValue();
-        // show messageBox animation
-        logitech.jumpToNewLine();
       }
+      // show messageBox animation
+      logitech.jumpToNewLine();
     }
   },
   darkenKey: function(e) {

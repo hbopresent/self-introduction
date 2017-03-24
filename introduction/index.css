@@ -23,7 +23,7 @@ body {
   width: 1400px;
   height: 400px;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   left: 260px;
   background-color: #176c86;
   border-radius: 15px;
@@ -240,7 +240,7 @@ body {
 \************/
 .messageBox {
   position: absolute;
-  top: 400px;
+  top: 280px;
   left: 560px;
   width: 800px;
   height: 100px;
@@ -292,8 +292,7 @@ body {
   width: 30%;
   height: 85%;
   position: absolute;
-  top: 6%;
-  /*top: -80%;*/
+  top: -85%;
   left: 35%;
   background-color: #FFF;
   /*background-color: rgb(255, 246, 165);*/
@@ -301,99 +300,77 @@ body {
 }
 @keyframes printNotePaper1 {
   0% {
-    top: -80%
+    top: -85%
   }
   5% {
-    top: -79%;
+    top: -84%;
   }
   10% {
-    top: -78%;
+    top: -83%;
   }
   15% {
-    top: -77%;
+    top: -82%;
   }
   20% {
-    top: -76%;
+    top: -81%;
   }
   25% {
-    top: -75%;
+    top: -80%;
   }
   30% {
-    top: -74%;
+    top: -79%;
   }
   35% {
-    top: -73%;
+    top: -78%;
   }
   40% {
-    top: -72%;
+    top: -77%;
   }
   45% {
-    top: -71%;
+    top: -76%;
   }
   50% {
-    top: -70%;
+    top: -75%;
   }
   55% {
-    top: -69%;
+    top: -74%;
   }
   60% {
-    top: -68%;
+    top: -73%;
   }
   65% {
-    top: -67%;
+    top: -72%;
   }
   70% {
-    top: -66%;
+    top: -71%;
   }
   75% {
-    top: -65%;
+    top: -70%;
   }
   80% {
-    top: -64%;
+    top: -69%;
   }
   85% {
-    top: -63%;
+    top: -68%;
   }
   90% {
-    top: -62%;
+    top: -67%;
   }
   95% {
-    top: -61%;
+    top: -66%;
   }
   100% {
-    top: -60%;
+    top: -65%;
   }
 }
 @keyframes printNotePaper2 {
   0% {
-    top: -60%;
+    top: -65%;
   }
   100% {
-    top: 10%;
+    top: 7%;
   }
 }
-.notePaperInfo {
-  width: 150px;
-  height: 50px;
-  position: absolute;
-  right: 5%;
-  top: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  visibility: hidden;
-  display: none;
-}
-  .notePaperInfo__No {
-    width: 100%;
-    height: 40%;
-    border-bottom: 1px solid #000;
-  }
-  .notePaperInfo__Date {
-    width: 100%;
-    height: 40%;
-  }
 .notePaperLine {
   width: 90%;
   height: 90%;
